@@ -1,0 +1,13 @@
+CREATE TABLE Songs(
+SongID int(11) NOT NULL UNIQUE AUTO_INCREMENT,
+Song varchar(50) NOT NULL,
+Artist varchar(50),
+Price decimal(10,2) NOT NULL);
+
+CREATE TABLE Purchased(
+PurchaseID int(11) NOT NULL UNIQUE AUTO_INCREMENT,
+Song int(11) DEFAULT 1);
+
+INSERT INTO Songs(Song, Artist, Price)
+VALUES('Chandelier', 'Sia', 5.99),
+('Happier', 'Marshmello', 10.99);
