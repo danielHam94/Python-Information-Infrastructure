@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+<title>Robot Delivery System</title>
+</head>
+
+<body>
+
+<form method="post" action="hw7.cgi">
+	<H1>What would you like to have delivered?</H1>
+	<input type="text" name="item"/><br/>
+	<h2>Cost: $</h2>
+	<input type="text" name="cost"/><br/>
+	<h2>Delivery Method:</h2>
+		<br /><input type="radio" name="method" value="drone" checked />Flying Drone ($10)
+		<br /><input type="radio" name="method" value="self driving car" />Self Driving Car ($20)
+		<br /><input type="radio" name="method" value="robot" />Giant Robot ($1000)
+	<p><button type="submit">Submit</button></p>
+</form>
+</body>
+</html>

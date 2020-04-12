@@ -1,0 +1,19 @@
+Sung Hoon Ham
+Group 2
+
+1. What does the WHERE clause do?
+A: We can use the WHERE clause to put constraints when selecting data.
+2. Write a SQL statement that will remove all the rows from a table called Places
+A: DELETE FROM Places;
+3. What is a Record in a Database?
+A: The rows in the table data
+4. How do you make a field automatically default to unique, increasing numbers?
+A: By using AUTO_INCREMENT
+5. What command puts results in order?
+A: By using ORDER BY 
+6. Write a SQL statement that would display how many people have a LastName that starts with the letter B in a table called Students
+A: SELECT COUNT(LastName) FROM Students WHERE LastName like 'B%'; 
+7. Write a SQL statement that would display the 5 Item with the highest Price in a table called Store
+A: SELECT Item FROM Store ORDER BY Price DESC limit 5;
+8. What are the parts needed for a nested query?
+A: Nested queries are created by by using results from one query to restrict another. Using an IN operator is a way where a nested query returns more than one result.

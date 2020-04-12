@@ -1,0 +1,31 @@
+Sung Hoon Ham
+Group 2
+HW 8
+
+
+1.
+CREATE TABLE Singer
+(SingerID int(11) UNIQUE,
+FirstName varchar(30),
+LastName varchar(30),
+Label varchar(30),
+Salary int(11),
+Style varchar(30)
+);
+
+2.
+CREATE TABLE Tour
+(TourID int(11) UNIQUE,
+TourName varchar(30),
+Begin date,
+End date,
+Headliner int(11)
+);
+
+3.
+INSERT INTO Singer(SingerID, FirstName, LastName, Label, Salary, Style)
+VALUES(1, 'George', 'Hill', 'Sony', 100000, 'style');
+
+4.
+SELECT * FROM 'Singer' 
+WHERE SALARY > 250000 AND Label = 'Sony';
